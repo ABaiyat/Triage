@@ -30,9 +30,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('', (req, res) => {
-  res.send('Triage');
-});
+const users = require('./routes/users');
+app.use('/users', users);
 
 app.listen(port, () => {
   console.log('Listening on port ' + port);
