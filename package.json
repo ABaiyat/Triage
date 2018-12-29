@@ -1,0 +1,24 @@
+{
+  "name": "triage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-react": "^7.12.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "eslint": "^5.11.1"
+  }
+}
