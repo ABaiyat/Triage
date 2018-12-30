@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-class Navigation extends Component {
+class NavigationContainer extends Component {
   state = {};
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
@@ -62,4 +62,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default NavigationContainer;
