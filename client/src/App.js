@@ -6,6 +6,7 @@ import Register from "./components/Register/Register";
 import Navigation from "./components/Navigation/Navigation";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Profile from "./components/Profile/Profile";
+
 import "./App.css";
 
 class App extends Component {
